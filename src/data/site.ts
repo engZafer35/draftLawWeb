@@ -42,7 +42,7 @@ export const siteConfig: {
   email: "info@zafersatilmis.av.tr",
   secondaryEmail: "iletisim@zafersatilmis.av.tr",
   address:
-    "Cumhuriyet Bulvari No:00 Kat:2 Konak / Izmir",
+    "Metal Sokak No:00 Kat:2 Konak / Izmir",
   officeHours: [
     "Pazartesi - Cuma: 09:00 - 19:00",
     "Cumartesi: 10:00 - 16:00",

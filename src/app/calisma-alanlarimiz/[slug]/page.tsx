@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/layout/container";
+import { PracticeAreaDetailContent } from "@/components/sections/practice-area-detail";
 import { blogPosts } from "@/data/blog-posts";
 import { getPracticeArea, practiceAreas } from "@/data/practice-areas";
 
@@ -78,18 +79,14 @@ export default async function PracticeAreaDetailPage({
 
       <Container className="py-20">
         <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr]">
-          <div className="space-y-8">
-            {area.content.map((paragraph) => (
-              <p key={paragraph} className="text-base leading-8 text-stone-700">
-                {paragraph}
-              </p>
-            ))}
+          <PracticeAreaDetailContent detail={area.detail} />
 
+          <div className="space-y-6 lg:sticky lg:top-28 lg:self-start">
             <div className="rounded-[2rem] border border-stone-200 bg-stone-50 p-8">
-              <h2 className="text-2xl font-semibold text-stone-950">
+              <h3 className="text-xl font-semibold text-stone-950">
                 Bu alanda hangi konularda destek veriyoruz?
-              </h2>
-              <div className="mt-5 grid gap-3 sm:grid-cols-2">
+              </h3>
+              <div className="mt-5 grid gap-3">
                 {area.topics.map((topic) => (
                   <div
                     key={topic}
@@ -100,9 +97,7 @@ export default async function PracticeAreaDetailPage({
                 ))}
               </div>
             </div>
-          </div>
 
-          <div className="space-y-6">
             <div className="rounded-[2rem] border border-stone-200 bg-white p-8 shadow-sm">
               <h3 className="text-xl font-semibold text-stone-950">Ilgili Yazilar</h3>
               <div className="mt-5 space-y-4">

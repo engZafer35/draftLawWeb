@@ -12,11 +12,6 @@ export const metadata: Metadata = {
 export default function PracticeAreasPage() {
   return (
     <>
-      <PageIntro
-        eyebrow="Calisma Alanlarimiz"
-        title="Izmir'de kapsamli hukuki hizmet alanlarimiz"
-        description="Dava takibi, danismanlik ve stratejik surec yonetimini acik ve anlasilir bir yaklasimla yuruten hizmet sayfalarimizdan detaylara ulasabilirsiniz."
-      />
       <PracticeGrid />
       <Container className="pb-20">
         <div className="rounded-[2rem] border border-stone-200 bg-white p-8 shadow-sm">
