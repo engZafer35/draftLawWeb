@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://www.zafer-satilmis.av.tr/sitemap.xml
