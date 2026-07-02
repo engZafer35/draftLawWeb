@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:doc": "next build && node scripts/move-export-to-doc.mjs",
+    "build:doc": "next build && node scripts/move-export-to-docs.mjs",
+    "build:gh-pages": "node scripts/build-gh-pages.mjs",
     "start": "next start",
     "lint": "eslint"
   },
